@@ -1,0 +1,136 @@
+    
+/*creating a box that an image covers the whole thing with a shadow gradient that makes the texts more visible, changing the size of the box and giving a border-radious that it is not complete rectangle*/
+.container{
+    position: relative;
+    max-height: 900px;
+    width: 96%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(139, 137, 137, 0.7)), url(registration-picture2.jpg);
+    background-size: cover;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    left: 0;
+    bottom: 0;
+}
+/*changing the color, size and brightness of the text in the header*/
+.container header{ 
+    position: relative ;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+ /*changing the color, size and position of the text in the form*/
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 600px;
+    background-color: #fff;
+    font-size: 30px;
+}
+/*changing the size and position of the text in the form-details*/
+.container  form .details{
+    margin-top: 10px;
+    font-size: 20px;
+}
+/*changing the color, broghtness , size and position of the text in the form-title*/
+.container form .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    font-size: 20px;
+}
+/*putting the items in the form at the center of the box and space between them*/
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*changing the color, size, position of the input field*/
+form .fields .input-fields{ 
+    display: flex;
+    flex-direction: column;
+    width: calc(100% /3 - 15px);
+    background-color: gray;
+    margin: 3px 2px;
+    padding: 2px;    
+}
+/*chanfing the color text-size, text-brightness in the label*/
+.input-fields label{
+    font-size: 12px;
+    font-weight: 500;
+    color:#fff;
+    font-size: 20px;
+}
+
+
+/*changing the size, color,brightness of the text and also changing the size and position of the input box */
+.input-fields input{
+    height: 42px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    margin: 8px 0;
+    bottom: -9px;
+    position: relative;
+}
+.input-fields input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1)
+}
+
+/*changing the size, color,brightness of the text and also changing the size and position of the selection box */
+
+.input-fields .gender{
+    height: 42px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    margin: 8px 0;
+    bottom: -9px;
+    position: relative;
+}
+.input-fields .gender:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1)
+}
+/*changing the size, color,brightness of the text and also changing the size and position of the button*/
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 400px;
+    outline: none;
+    color: white;
+    margin: 45px 10px;
+    background-color:rgb(13, 93, 190)  ;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+form button:hover{
+    background-color:  rgba(7, 131, 11, 0.911);
+}
+
+
+    
+   
+
+
+
+
+
+
+
+
+

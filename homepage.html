@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linking the css for the heading-->
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <!--linking the css for homepsge-->
+    <link rel="stylesheet" type="text/css" href="homepagecss.css">
+
+    <title>home page</title>
+</head>
+<body>
+<div class="heading">
+    <!--addind the TechCon picture for heading-->
+    <div class="logo"><img src="download.jpg"></div>
+    <ul>
+        <!--adding the navigation to nabigste through the webpages-->
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="shedule.html">SCHEDULE</a></li>
+        <li><a href="speakerhtml.html">SPEAKERS</a></li>
+        <li><a href="contact.html">CONTACT</a> </li>
+    </ul>
+    
+</div>
+    <!--creating a div to edit style homepage-->
+    <div class="container">
+            <!--creating a div to style the rows-->
+            <div class="row">
+                <!--creating a div to style the col-->
+                <div class= "col">
+                    <!--adding a text message-->
+                    <h1>homepage</h1>
+                    <!--adding a text message-->
+                    
+                    <p>Welcome to TechCon, where innovation meets inspiration! TechCon is not just a conference; it's a dynamic gathering of tech enthusiasts, industry leaders, and visionaries pushing the boundaries of what's possible in the ever-evolving world of technology. Immerse yourself in a vibrant atmosphere where cutting-edge ideas come to life through engaging keynote sessions, interactive workshops, and thought-provoking panel discussions. From the latest breakthroughs in artificial intelligence and cybersecurity to the future of software development and beyond, TechCon is your gateway to staying ahead in the fast-paced tech landscape. Network with like-minded professionals, gain insights from seasoned experts, and discover the trends shaping the future of technology. Join us at TechCon and be a part of the conversation driving innovation forward. The future is here, and it's at TechCon!</p>
+                    <!--adding a button that when click it, it goes to registration and we will give it an id that that can be used in java script-->
+                    <p>starting date:12/12/2023</p>
+                    <p>Last time for registration:09/12/2023</p>
+                    <p>please for registraion click the button below</p>
+                    <button id="animatedButton" onclick="got_to_registration()">Registration</button> 
+                    <h3>The events is being held: At University of Leicester</h3>
+                    <a href="https://www.google.com/maps/place/University+of+Leicester/@52.6211393,-1.1272074,17z/data=!3m1!4b1!4m6!3m5!1s0x4877612fa55d947f:0xf8da17fed74e0044!8m2!3d52.6211393!4d-1.1246325!16zL20vMDF6bjR5?entry=ttu">Please press here to see the location</a>
+                </div> 
+                <!--creating a div to edit style col-->  
+                <div class="col">
+                    <!--creating a div to edit style the card card1--> 
+                    <div class="card card1">
+                        <!--adding a a link-->
+                        <a href="register.html">REGISTER</a>
+                        <!--adding a paragraph-->
+                        <p><a href="register.html">We would be delighted if you could register for the event</a></p>
+                    </div>
+                    <!--the same pattern as above with different class to style it and different text--> 
+                    <div class="card card2">
+                        <a href="shedule.html">SCHEDULE</a>
+                        <p><a href="shedule.html">assist with planning, we recommend checking the schedule.</a></p> 
+                    </div>
+                    <br>
+                     <!--the same pattern as above with different class to style it and different text--> 
+                    <div class="card card3">
+                        <a href="speakerhtml.html">SPEAKERS</a>
+                        <p><a href="speakerhtml.html">provide you with more information, please refer to the list of speakers.</a></p>
+                    </div>
+                     <!--the same pattern as above with different class to style it and different text--> 
+                    <div class="card card4">
+                        <a href="contact.html">CONTACT</a>
+                        <p><a href="contact.html">you have any questions or need assistance, please feel free to contact us</a> </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+<script>
+
+    function got_to_registration(){
+        window.location.href="register.html"
+    }
+    var animatedButton = document.getElementById('animatedButton');
+
+    animatedButton.addEventListener('click', function() {
+        animatedButton.classList.add('clicked');
+    });
+</script>     
+</body>
+</html>        
+
+
+
+
+
+
+
+

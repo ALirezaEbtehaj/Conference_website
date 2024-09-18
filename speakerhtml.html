@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--linking the css to style the speakers-->
+  <link rel="stylesheet" href="speakercss.css">
+  <!--linking the css to style the heading-->
+  <link rel="stylesheet" href="css.css">
+  <script defer src="script.js"></script>
+  <title>Speakers Profiles</title>
+</head>
+<body>
+<!--inserting an image and creating a div, called logo to style it-->
+<div class="heading">
+<div class="logo"><img src="download.jpg"></div>
+    <!--creating a lsit to navigate to other webpages -->
+    <ul>
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="shedule.html">SCHEDULE</a></li>
+        <li><a href="speakerhtml.html">SPEAKERS</a></li>
+        <li><a href="contact.html">CONTACT</a> </li>
+    </ul>
+            
+</div>  
+   <!--using an image from :https://generated.photos/--> 
+   <!--creating  div called containter to style it--> 
+  <div class="container">
+    <!--creating  a profile of the first speaker, inserting a image then move it to the left by 10px and give it an id so that we can use it in javascript and adding his name  -->
+    <div class="speaker" id="speaker1">
+      <img style="margin-left: 10px;" src="speaker1.jpg" alt="Speaker 1">
+      <!--for the names I used random chat generator called chatgpt-->
+      <h3>Dr. John Doe</h3>
+      <br>
+      <!--move the text 15% up and -25% left-->
+      <p style="margin-top: 15%; margin-left: -25%;">Please click on the picture to see the full bio</p>
+    </div>
+    <!--give space betweent two speakers-->
+    <br> <br>
+      <!--creating the profile of the first speaker, inserting the image then move it to the left by 10px and give it an id so that we can use it in javascript  also adding her name  -->
+    <div class="speaker" id="speaker2">
+      <img  style="margin-left: 10px;" src="speaker2.jpg" alt="Speaker 2"> 
+      <!--for the names I used random chat generator called chatgpt-->
+      <h3>Dr.Jane Smith </h3>
+      <p style="margin-top: 15%; margin-left: -25%;">Please click on the picture to see the full bio</p>
+    </div>
+    <br> <br>
+     <!--creating the profile of the first speaker, inserting the image then move it to the left by 10px and give it an id so that we can use it in javascript also adding his name  -->
+    <div class="speaker" id="speaker3">
+      <img style="margin-left: 10px;" src="speaker3.jpg" alt="Speaker 3">
+       <!--for the names I used random chat generator called chatgpt-->
+      <h3>Dr.Mark Johnson</h3>
+      <!--move the text 15% up and -30% left-->
+      <p style="margin-top: 15%; margin-left: -30%;">Please click on the picture to see the full bio</p>
+    </div>
+    <br> <br>
+     <!--creating the profile of the first speaker, inserting the image then move it to the left by 10px and give it an id so that we can use it in javascript adding her name  -->
+    <div class="speaker" id="speaker4">
+      <img style="margin-left: 10px;" src="speaker4.jpg" alt="Speaker 4">
+       <!--for the names I used random chat generator called chatgpt-->
+      <h3>Dr.Sarah Martinez</h3>
+      <!--move the text 15% up and -25% left-->
+      <p style="margin-top: 15%; margin-left: -30%;">Please click on the picture to see the full bio</p>
+    </div>
+  </div>
+  <div class="bio-popup" id="bioPopup">
+    <div class="bio-content">
+      <span class="close-btn" onclick="closeBioPopup()">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <p id="popupBio"></p>
+    </div>
+  </div>
+</body>
+</html>

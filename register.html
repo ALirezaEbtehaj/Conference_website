@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="registrationcss.css">
+    <!--linking the css for registration-->
+    <link rel="stylesheet" href="https://unicons.iconscount.com/release/v4.0.0/css/line/css">
+    <!--linking unicons for icons-->
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <!--linking the css for heading-->
+    <script src="https://kit.fontawesome.com/ba3927ebd7.js" crossorigin="anonymous"></script>
+    <!--linking icons-->
+    <title>Registration</title>
+
+   
+</head>
+<body>
+<!-- i used youtube video to guide me to link:https://www.youtube.com/watch?v=wL9YzgA13c4&list=PLImJ3umGjxdDqTlZhQxXBeGij9Oa9Xjnj&index=4-->   
+<!--creating a div to style it-->
+<div class="background" >
+    <!--creating div to style it-->
+    <div class="heading">
+        <!--inserting an iamge-->
+        <div class="logo"><img src="download.jpg"></div>
+        <!--creating a list-->
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+            <li><a href="shedule.html">SCHEDULE</a></li>
+            <li><a href="speakerhtml.html">SPEAKERS</a></li>
+            <li><a href="contact.html">CONTACT</a> </li>
+        </ul>
+        
+    </div>
+    <!--creating a div to style the container-->
+    <div class="container">
+        <!--writing a text in header section-->
+        <header>Registration</header>
+        <!--creating a form -->
+        <form action="#" id="registrationForm" onsubmit="return phone_number()">
+            <!--creating a div ro style the first form-->
+            <div class="form first">
+                <!--creating a div to style personal setails-->
+                <div class="details Personal">
+                    <span class="title">Personal Details </span>
+                    <div class="fields">
+                        <!--creating a div to style the input fields-->
+                        <div class="input-fields">
+                            <!--creating a label which input field can be inside it and giving it an icon and givien it a title that desrible what is the input field about-->
+                            <label><i class="fa-solid fa-user"></i> Full name</label> 
+                            <!--creating an input field with a text inside and it is required to fill it -->
+                            <input id="fullName" type="text" placeholder="Enter Your name" required>
+                            
+                        </div>
+                        
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+                        <div class="input-fields">
+                            <label><i class="fa-solid fa-cake-candles"></i> Date of Birth</label> 
+                            <input  type="date" placeholder="Enter Birth Date" required >
+                        </div>
+                         
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+                        <div class="input-fields">
+                            <label><i class="fa-solid fa-envelope"></i> Email </label> 
+                            <input type="text" placeholder="Enter Your Email" required >
+                        </div>
+                         <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+
+                        <div class="input-fields">
+                            <label><i class="fa-solid fa-phone"></i> Mobile Number</label> 
+                            <input type="number" placeholder="Enter Your number" required  id="phone">
+                        </div>
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+                    
+
+                        <div class="input-fields">
+                            <label> Gender</label> 
+                            <!--here i used select function which allowed the user to only chose from the option givined-->
+                            <select class="gender" name="gender">
+                                <option value="male">male</option>
+                                <option value=" female">female</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                        </div>
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+
+                        <div class="input-fields">
+                            <label> Occupation </label> 
+                            <input type="text" placeholder="what is your occupation" required >
+                        </div>
+                    </div>
+                </div>
+
+                <!--creating a class called address details-->
+                <div class="Address Details">
+                    <span class="title">Address Details </span>
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label> Address Line 1</label> 
+                            <input type="text" placeholder="Enter Your Address" required>
+                        </div>
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+                        <div class="input-fields">
+                            <label> Address Line 2</label> 
+                            <input type="text" placeholder="Enter your Address" >
+                        </div>
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+                        <div class="input-fields">
+                            <label> Address Line 3 </label> 
+                            <input type="text" placeholder="Enter Your Address " >
+                        </div>
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+                        <div class="input-fields">
+                            <label><i class="fa-solid fa-globe"></i> Country</label> 
+                            <input type="text" placeholder="Enter Your Country" required >
+                        </div>
+                        <div class="input-fields">
+                            <label> City</label> 
+                            <input type="text" placeholder="Enter your city" required >
+                        </div>
+                        <!--the pattern repeat itself with just different type such as date for birthday, number for phone number and text for text, and also with different-->
+                        <div class="input-fields">
+                            <label> Post code</label> 
+                            <input type="text" placeholder="What is your post code" requiredS >
+                        </div>
+                        <!--creaing div to style the button-->
+                        <div class="button">
+                            <!--creating a button-->
+                            <button class="submit" type="Submit">
+                                <!--spans submit-->
+                                <span class="submit">Submit</span>
+                                <i class="uil uil-navigatior"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </form>
+    </div> 
+</div>       
+<script>
+    function phone_number(){
+        var number = document.getElementById(".phone").value;
+        if (phone.lenght !=11){
+            alert("invalid phone number");
+            return false;
+        }    
+        return true;
+    }      
+</script> 
+    
+</body>
+</html>

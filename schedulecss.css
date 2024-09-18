@@ -1,0 +1,77 @@
+/*creating a box that an image covers the whole thing with a shadow gradient that makes the texts more visible, changing the size of the box */
+.background{
+    background-image:linear-gradient(rgba(0,0,0,0.7), #3551b5), url(schedule-picture.jpg);
+    background-size: cover;
+    margin-top: -40px;
+    width: 100%;
+    height: 760px;
+    
+}
+/*changing th ecolor,position,size of the text*/
+h1{
+    position: relative;
+    left: 600px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 40px;
+    align-items: center;
+}
+/*changing, back-ground color, the color, position, size of the selectiom*/
+.selection{
+    margin-left: 0px;
+    font-size: 50px;
+    align-items: center;
+    background-color: rgb(9, 14, 18); 
+    width: 40%;
+    margin-top: 40px;
+    color: #fff;
+    margin-right: 40px;
+    position: relative;
+    left: 10px;
+}
+/*when the mouse goes on the slection it change shapes*/
+.selection select{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*when an itme is selected the colour changes*/
+.selection select option{
+    background-color: #fff;
+    color: #333;
+    padding: 8px;
+    width: 100%;
+}
+/*the colour of the selection that you are currently are in changes*/
+.selection select option:checked{
+    background-color: #4caf50;
+    color: #fff;
+}
+/*putting a border and changing the color*/
+table, th{
+    border: 1px solid black;
+}
+/*changing the size and position of the table*/
+table {
+    width: 100%;
+    height: 50vh;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-bottom: 40px;    
+}
+/*putting a border and changing the color*/
+tbody{
+    border: 1px solid black;
+
+}
+/*putting a border and changing the color*/
+td{
+    border: 1px solid gray;
+    color: #fff;
+
+}
+/*putting a border and changing the color*/
+thead{
+    background-color: cornflowerblue;
+}

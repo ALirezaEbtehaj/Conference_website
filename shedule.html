@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linking the css for heading-->
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <!--linking the css for schedule-->
+    <link rel="stylesheet" type="text/css" href="schedulecss.css">
+    <title>Schedule</title>
+    <style>
+    </style>    
+</head>
+<body>
+<!--creating a div to style the heading-->
+<div class="heading">
+    <!--inserting an iamge-->
+    <div class="logo"><img src="download.jpg"></div>
+    <!--creating a lsit to navigate to other webpages -->
+    <ul>
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="shedule.html">SCHEDULE</a></li>
+        <li><a href="speakerhtml.html">SPEAKERS</a></li>
+        <li><a href="contact.html">CONTACT</a> </li>
+    </ul>        
+</div>
+<!--creating a div to style the background-->
+<div class="background">
+    <!--creating a div to style the selection-->
+    <div class="selection">
+        <!--creating a label to put a box insdie it for selection-->
+        <label for="dayFilter">Days:</label>
+        <!--crerating a selection and putting options that the user can chose from it. and giving it an id to connect it to javascript-->
+        <select id="dayFilter" onchange="filterSchedule()">
+            <option value="all">All</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </select>
+    </div>   
+    <!--creating a div to style the tayble--> 
+    <div class="table">
+        <!--creating a table and giving it an id-->
+        <table id="schedule">
+            <!--top row of the schedule which specifies what each column is about-->
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Speakers</th>
+                    <th>Event</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--schedule rows -->
+                <tr>
+                    <td>Monday</td>
+                    <td>10:00 - 12:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr. John Doe</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>Microsoft Ignite: Microsoft's annual conference for developers and IT professionals, focusing on Microsoft technologies, products, and services.</th>
+                   
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Monday</td>
+                    <td>14:00 - 16:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Jane Smith</td>
+                    <!--for the events I used random chat generator called chatgpt-->    
+                    <td>CES (Consumer Electronics Show): A major annual trade show organized by the Consumer Technology Association, showcasing consumer electronics and technology innovations.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Monday</td>
+                    <td>15:00 - 18:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Jane Smith</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>Apple WWDC (Worldwide Developers Conference): Apple's annual conference for developers, where they announce new software and hardware products.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Monday</td>
+                    <td>23:00</td>
+                    <td></td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>Meeting up: come to the party and have funS</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Tuesday</td>
+                    <td>12:00 - 14:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Sarah Martinez</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>Black Hat and DEF CON: Security conferences focusing on cybersecurity, ethical hacking, and information security.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Tuesday</td>
+                    <td>15:00 - 17:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Mark Johnson</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>SXSW (South by Southwest): An annual event that covers a wide range of topics, including technology, film, music, and interactive media</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Tuesday</td>
+                    <td>20:00 - 22:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Mark Johnson</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>RSA Conference: A leading cybersecurity conference, featuring discussions and presentations on the latest trends and challenges in cybersecurity.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9:00 - 11:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Sarah Martinez</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>Google I/O: Google's annual developer conference, where they announce new products, updates to existing ones, and share insights on the latest developments in technology.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Wednesday</td>
+                    <td>12:00 - 14:00</td>
+                    <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Mark Johnson</td>
+                     <!--for the events I used random chat generator called chatgpt-->
+                    <td>PyCon: An annual conference for the Python programming language community, covering development, best practices, and emerging trends in Python</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Wednesday</td>
+                    <td>14:00 - 16:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr. John Doe</td>
+                    <!--for the events i used random chat generator called chatgpt-->
+                    <td>CES (Consumer Electronics Show): A major annual trade show organized by the Consumer Technology Association, showcasing consumer electronics and technology innovations.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Thursday</td>
+                    <td>17:00 - 19:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Jane Smith</td>
+                    <td>F8 Developer Conference: Facebook's annual conference for developers, where they announce updates and new features for the Facebook platform.</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>10:00 - 12:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Jane Smith</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>TechEd: Microsoft's conference series focused on technology education and training for IT professionals and developers.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Thursday</td>
+                    <td>13:00 - 15:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr. John Doe</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>Dreamforce: Salesforce's annual conference, bringing together industry leaders, experts, and professionals to discuss cloud computing and customer relationship management (CRM)</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Thursday</td>
+                    <td>18:00 - 20:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Mark Johnson</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>Cloud Foundry Summit: A conference focusing on cloud computing, platform as a service (PaaS), and the Cloud Foundry open-source platform.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Friday</td>
+                    <td>12:00 - 15:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr. John Doe</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>CES Asia: An extension of the Consumer Electronics Show (CES), focusing on consumer technology in the Asian market.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Friday</td>
+                    <td>14:00 - 16:00</td>
+                     <!--for the names I used random chat generator called chatgpt-->
+                    <td>Dr.Jane Smith</td>
+                    <!--for the events I used random chat generator called chatgpt-->
+                    <td>GTC (GPU Technology Conference): Hosted by NVIDIA, GTC covers GPU (graphics processing unit) technology and its applications in various industries.</td>
+                </tr>
+                <!--schedule rows -->
+                <tr>
+                    <td>Friday</td>
+                    <td>23:00</td>
+                    <td></td>
+                    <td>Goodbye party: have fun</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script>
+        function filterSchedule() {  
+            var dayFilter = document.getElementById("dayFilter").value.toLowerCase(); 
+            var rows = document.getElementById("schedule").getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            for (var i = 0; i < rows.length; i++) {
+                var dayColumn = rows[i].getElementsByTagName("td")[0].textContent.toLowerCase();
+                if (dayFilter === "all" || dayFilter === dayColumn) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

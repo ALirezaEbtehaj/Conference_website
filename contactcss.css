@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppons',sans-serif;
+    box-sizing: border-box;
+}
+/*changing the position of h1 text and the colour*/
+h1{
+    position: relative;
+    bottom: 120px;
+    font-size: 50px;
+    left: 140px;
+    color: #fff;;
+   
+}
+/*changing the position of p text and the colour*/
+p{
+    position: relative;
+    bottom: 100px;
+    font-size: 20px;
+    color: #fff;;
+}
+/*creating a box that contains evrything in it, inserting an image that covers the whole box and givin it a darker shadow which, text can be read more easily and put the items in the center of the box*/
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), #3551b5),  url(download\ 2.jpg);
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom:60px
+}
+/*changing the size of the form*/
+ form{
+    width: 90%;
+    max-width: 600px;
+ }
+ /*change the position*/
+ .input-group{
+    margin-bottom: 50px;
+    position: relative;
+ }
+/*changing the the size, the color, text size of the input*/
+ input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+
+ }
+ /*changign the size, position, color and also how long the animation takes*/
+ label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+ }
+ /*changing the color, size, position of the button*/
+ button{
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+ }
+ /*moving the text in the input box to above the input box*/
+ input:focus~label,
+ input:valid~label,
+ textarea:focus~label,
+ textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+
+ }

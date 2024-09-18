@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the css for heading-->
+    <link rel="stylesheet" type="text/css" href="css.css">
+     <!-- linking the css for contactcss-->
+    <link rel="stylesheet" type="text/css" href="contactcss.css">
+    <!--linking fontawesome website to use icons-->
+    <script src="https://kit.fontawesome.com/ba3927ebd7.js" crossorigin="anonymous"></script>
+    <title>Contacts</title>
+</head>
+<body>
+<!--inserting an image and creating a div called logo to style it-->
+<div class="heading">
+    <!--creating a lsit to navigate to other webpages -->
+    <div class="logo"><img src="download.jpg"></div>
+    <ul>
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="register.html">REGISTER</a></li>
+        <li><a href="shedule.html">SCHEDULE</a></li>
+        <li><a href="speakerhtml.html">SPEAKERS</a></li>
+        <li><a href="contact.html">CONTACT</a> </li>
+    </ul>
+        
+</div>
+    <div class="contact"> 
+        <h2>CONTACT US</h2>  
+    <h3>Got a question?we'd love to hear from you, send us a message and we will respond as soon as possible  </h3>
+</div>
+
+<div class="background">
+<form>
+     <!--adding a heading-->
+    <h1>CONTACT US</h1>
+    <!--adding a paragraph-->
+    <P>Got a question?we'd love to hear from you, send us a message and we will respond as soon as possible  </P>
+    <div class="input-group">
+        <!--creating an input for useer to put its name-->
+        <input type="text" id="name" required>
+        <!--adding a label , icon and title of what is the input about-->
+        <label for="name"><i class="fa-solid fa-user"></i>Your name </label>
+    </div>
+    <div class="input-group">
+         <!--creating an input for useer to put its numebr-->
+        <input type="number" id="number" required>
+         <!--adding a label , icon and title of what is the input about-->
+        <label for="number"><i class="fa-solid fa-phone"></i>Phone Number </label>
+    </div>
+    <div class="input-group">
+        <!--creating an input for useer to put its email-->
+        <input type="email" id="email" required>
+         <!--adding a label , icon and title of what is the input about-->
+        <label for="email"><i class="fa-solid fa-envelope"></i>Email Id </label>
+    </div>
+    <div class="input-group">
+        <!--creating an input for useer to put its message-->
+        <textarea id="message" rows="8" required></textarea>
+         <!--adding a label , icon and title of what is the input about-->
+        <label for="message"><i class="fa-solid fa-comments"></i>Your message </label>
+    </div>
+    <!--creating a button which can be submit the details-->
+    <button type="submit">SUBMIT<i class="fa-solid fa-paper-plane"></i></button>
+</form>
+</div> 
+</body>
+</html>
